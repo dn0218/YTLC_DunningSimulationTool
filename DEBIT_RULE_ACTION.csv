@@ -1,0 +1,211 @@
+"DEBIT_RULE_ID","SEQ","DEBIT_ACTION_TYPE","NAME","CONTINUE_ON_ERROR"
+6,1,14,One-Way Reactivation,Y
+9,1,4,One-Way Block,N
+10,1,5,Two-Way Block,N
+11,1,6,Termination,N
+25,1,121,SMS_POST_REMINDER_90,Y
+25,2,122,EMAIL_POST_REMINDER_90,Y
+25,3,130,PUSH_POST_PAYREMINDER_001,Y
+33,2,122,EMAIL_POST_BARRED_36,N
+34,1,121,SMS_PRE_SUSPENSION_NOTIFICATION,N
+36,1,20,IMEI Blocking (for active device bundle plan subscribers),N
+36,2,121,SMS_INFINITEPLUS_POST_SUSPENSION,N
+36,3,123,PUSH_INFINITEPLUS_POST_SUSPENSION_001,N
+37,1,122,EMAIL_PRE_TERMINATION_NOTIFICATION,N
+49,1,119,Remove CTOS Trade Blacklist,Y
+49,2,117,Remove CTOS Blacklist,Y
+67,1,121,sms,N
+23,5,118,Add CTOS Trade Blacklist,Y
+58,1,3,one-way-block notify,N
+79,1,121,SMS_POST_CTOS_BL,N
+20,4,122,EMAIL_INFINITEPLUS_POST_SUSPENSION,Y
+42,3,3,SMS_1BN_ADDON_REMOVAL,Y
+21,2,122,EMAIL_PRE_CTOS_BL,N
+21,3,130,PUSH_POST_CTOS_002,N
+24,1,118,Add CTOS Trade Blacklist,N
+31,2,122,Payment Reminder Email,N
+32,1,4,One-Way Block For SI under there Account,N
+32,2,121,SMS_POST_BARRING_NOTIFICATION,N
+32,3,122,EMAIL_POST_BARRING_NOTIFICATION,N
+35,1,5,Two-Way Block,Y
+35,2,121,SMS_POST_SUSPENSION_NOTIFICATION,Y
+38,1,121,SMS_INFINITEPLUS_POST_SUSPENSION_BM,N
+44,1,23,Remove IMEI Blacklist,Y
+7,9,23,Rmv IMEI Blacklist,Y
+7,10,117,Remove CTOS Blacklist,Y
+59,1,4,one-way block,N
+61,1,3,two-way-block notify,N
+62,1,5,two way block,N
+64,1,6,termination,N
+68,1,3,barred-notify,N
+69,1,4,barred,N
+75,1,3,termination-notify,N
+76,1,6,termination,N
+79,2,24,Quit Dunning Manage,N
+49,3,24,Quit Dunning Manage,N
+42,4,122,EMAIL_1BN_ADDON_REMOVAL,Y
+44,2,24,Quit Dunning Manage,N
+52,2,24,Quit Dunning Manage,N
+15,5,26,Manual Action(Tagged),Y
+82,1,26,Manual Action(Tagged),Y
+85,1,121,Account SMS Notification,Y
+86,1,26,Manual Action(Tagged),Y
+25,4,26,Manual Action(Tagged),Y
+87,1,26,Manual Action(Tagged),Y
+88,1,26,Manual Action(Tagged),Y
+42,5,25,Close Dunning process,Y
+84,2,25,Close Dunning process,Y
+14,1,121,Payment Reminder,N
+111,1,23,Remove IMEI Blacklist,Y
+17,2,122,EMAIL_POST_BARRED_36,Y
+17,3,130,PUSH_POST_BARRED_002,Y
+18,1,122,EMAIL_POST_BARRED_50,N
+18,2,3,SMS_POST_BARRED_50,N
+19,1,5,Two-Way Block,Y
+19,2,121,SMS_POST_SUSPENSION,Y
+19,3,122,EMAIL_POST_SUSPENSION,Y
+19,4,123,PUSH_SUSPEN_001,Y
+20,3,123,PUSH_INFINITEPLUS_POST_SUSPENSION_001,Y
+22,1,121,SMS_INFINITEPLUS_POST_SUSPENSION_BM,N
+22,2,123,PUSH_INFINITEPLUS_POST_SUSPENSION_001_BM,N
+35,3,122,EMAIL_POST_SUSPENSION_NOTIFICATION,Y
+37,2,121,SMS_PRE_TERMINATION_NOTIFICATION,N
+40,1,6,Terminate Enterprise Sis under Account,N
+40,2,122,EMAIL_POST_TERMINATION_NOTIFICATION,N
+42,1,22,Remove Teacher Add-ons,Y
+43,1,8,Two-Way Reactivation,Y
+52,1,21,Subscribe Teacher Add-on,Y
+67,2,122,email,N
+51,1,21,Subscribe Teacher Add-on,Y
+51,2,24,Quit Dunning Manage,N
+45,1,23,Remove IMEI Blacklist,Y
+80,2,24,Quit Dunning Manage,N
+111,3,119,Remove CTOS Trade Blacklist,Y
+43,4,23,Rmv IMEI Blacklist,Y
+19,6,20,Add IMEI Blacklist,Y
+84,1,120,Synchronize Auto-Dialer,Y
+45,3,117,Remove CTOS Blacklist,Y
+45,4,119,Remove CTOS Trade Blacklist,Y
+85,2,25,Close Dunning process,Y
+89,1,21,Subscribe Teacher Add-on,Y
+35,4,20,Add IMEI Blacklist,Y
+15,1,122,EMAIL_POST_BARRED,Y
+14,2,122,Payment Reminder Email,N
+15,2,3,SMS_POST_BARRED,Y
+18,4,134,Account SKG Push Blacklist Notification,Y
+16,1,121,SMS_POST_BARRED_BM,N
+16,2,123,PUSH_POST_BARRED_BM_001,N
+17,1,3,SMS_POST_BARRED_36,Y
+18,3,130,PUSH_POST_BARRED_003,N
+20,1,20,IMEI Blocking,Y
+20,2,121,SMS_INFINITEPLUS_POST_SUSPENSION,Y
+21,1,121,SMS_PRE_CTOS_BL,N
+23,1,116,Add CTOS Blacklist,Y
+18,5,135,Account SKG Sms Blacklist Notification,Y
+18,6,136,Account SKG Email Blacklist Notification,Y
+26,1,121,SMS_POST_FINAL_REMINDER,N
+26,2,122,EMAIL_POST_FINAL_REMINDER,N
+26,3,130,PUSH_POST_PAYREMINDER_002,N
+27,1,6,Terminate Account,Y
+27,2,121,SMS_POST_TERMINATED,Y
+27,3,122,EMAIL_POST_TERMINATED,Y
+28,1,121,SMS_PRE_CTOS_BL,N
+28,2,122,EMAIL_PRE_CTOS_BL,N
+28,3,123,PUSH_POST_CTOS_002,N
+31,1,121,Payment Reminder SMS,N
+33,1,121,SMS_POST_BARRED_36,N
+34,2,122,EMAIL_PRE_SUSPENSION_NOTIFICATION,N
+38,2,123,PUSH_INFINITEPLUS_POST_SUSPENSION_001_BM,N
+40,3,121,SMS_POST_TERMINATION_NOTIFICATION,N
+7,8,120,Synchronize Auto-Dialer,Y
+70,1,3,suspension-notify,N
+71,1,8,suspension,N
+77,1,15,sms,N
+78,1,24,Quit Dunning Manage,N
+43,2,117,Remove CTOS Blacklist,Y
+43,3,119,Remove CTOS Trade Blacklist,Y
+17,4,26,Manual Action(Tagged),Y
+19,5,26,Manual Action(Tagged),Y
+90,3,14,One-Way Reactivation,Y
+43,6,124,Subscribe iQIYI,Y
+89,3,124,Subscribe iQIYI,Y
+108,1,6,Terminate Account,Y
+21,4,125,Unsubscribe iQIYI,Y
+109,2,124,Subscribe iQIYI,Y
+108,2,121,SMS_POST_TERMINATED,Y
+111,2,117,Remove CTOS Blacklist,Y
+111,4,124,Subscribe iQIYI,Y
+111,5,24,Quit Dunning Manage,Y
+19,8,132,Add SKG Blacklist,Y
+115,3,136,Account SKG Email Blacklist Notification,Y
+92,1,8,Two-Way Reactivation,Y
+93,6,24,Quit Dunning Manage,Y
+93,5,124,Subscribe iQIYI,Y
+92,2,117,Remove CTOS Blacklist,Y
+92,3,119,Remove CTOS Trade Blacklist,Y
+92,4,23,Rmv IMEI Blacklist,Y
+91,1,14,One-Way Reactivation,Y
+91,2,24,Quit Dunning Manage,N
+94,1,8,Two-Way Reactivation,Y
+95,4,24,Quit Dunning Manage,Y
+102,1,24,Quit Dunning Manage,N
+15,9,130,PUSH_POST_BARRED_001,Y
+101,2,121,SMS_POST_TERMINATION_NOTIFICATION,N
+103,1,121,Payment Reminder SMS,N
+106,1,121,Payment Reminder SMS,N
+106,2,122,Payment Reminder Email,N
+107,1,3,SMS_POST_BARRED_36,Y
+107,2,122,EMAIL_POST_BARRED_36,Y
+107,3,130,PUSH_POST_BARRED_002,Y
+114,4,6,Terminate Account,Y
+109,1,14,One-Way Reactivation,Y
+109,3,24,Quit Dunning Manage,N
+110,1,8,Two-Way Reactivation,Y
+110,5,124,Subscribe iQIYI,Y
+106,3,123,Payment Reminder APP,N
+92,8,133,Remove SKG Blacklist,Y
+43,8,133,Remove SKG Blacklist,Y
+45,8,133,Remove SKG Blacklist,Y
+15,7,4,Barring account,Y
+93,1,23,Remove IMEI Blacklist,Y
+93,2,117,Remove CTOS Blacklist,Y
+93,3,119,Remove CTOS Trade Blacklist,Y
+101,1,122,EMAIL_POST_TERMINATION_NOTIFICATION,N
+6,3,124,Subscribe iQIYI,Y
+6,4,24,Quit Dunning Manage,N
+45,7,24,Quit Dunning Manage,Y
+90,6,24,Quit Dunning Manage,N
+15,8,125,Unsubscribe iQIYI,Y
+98,3,121,Payment Reminder,Y
+108,3,122,EMAIL_POST_TERMINATED,Y
+93,7,133,Remove SKG Blacklist,Y
+94,4,23,Rmv IMEI Blacklist,Y
+94,2,117,Remove CTOS Blacklist,Y
+94,3,119,Remove CTOS Trade Blacklist,Y
+94,5,24,Quit Dunning Manage,N
+95,1,23,Remove IMEI Blacklist,Y
+95,2,117,Remove CTOS Blacklist,Y
+95,3,119,Remove CTOS Trade Blacklist,Y
+45,6,124,Subscribe iQIYI,Y
+43,7,24,Quit Dunning Manage,Y
+89,4,24,Quit Dunning Manage,Y
+90,5,124,Subscribe iQIYI,Y
+92,6,124,Subscribe iQIYI,Y
+92,7,24,Quit Dunning Manage,Y
+19,7,125,Unsubscribe iQIYI,Y
+98,2,122,Payment Reminder Email,Y
+99,1,121,SMS_POST_BARRING_NOTIFICATION,N
+99,2,122,EMAIL_POST_BARRING_NOTIFICATION,N
+100,1,121,SMS_POST_SUSPENSION_NOTIFICATION,Y
+110,2,117,Remove CTOS Blacklist,Y
+103,2,122,Payment Reminder Email,N
+100,2,122,EMAIL_POST_SUSPENSION_NOTIFICATION,Y
+110,4,23,Rmv IMEI Blacklist,Y
+110,3,119,Remove CTOS Trade Blacklist,Y
+110,6,24,Quit Dunning Manage,Y
+113,1,121,SMS_POST_HYBRID_D53,Y
+115,1,134,Account SKG Push Blacklist Notification,Y
+113,3,130,PUSH_POST_HYBRID_D53,Y
+115,2,135,Account SKG Sms Blacklist Notification,Y
+114,2,121,SMS_POST_TERMINATED,Y
+114,3,122,EMAIL_POST_TERMINATED,Y

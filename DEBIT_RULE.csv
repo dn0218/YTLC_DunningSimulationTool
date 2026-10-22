@@ -1,0 +1,81 @@
+"DEBIT_RULE_ID","DEBIT_RULE_GROUP_ID","PARENT_RULE_ID","NODE_TYPE","RULE_NAME","COMMENTS","SP_ID","STATE","STATE_DATE","OWE_DAYS","DEBIT_RULE_TYPE_ID"
+6,2,5,N,OWB Reactivation,,101,A,,,
+5,2,,Y,Is In Debt,,101,A,,,
+7,3,,Y,Postpaid with Collection Plan?,,101,A,,8,
+8,3,7,Y,Has Debit After Due Date?,,101,A,,,
+9,3,8,Y,One-Way Block,,101,A,,,
+10,3,9,N,Two-Way Block,,101,A,,,
+11,3,10,N,Termination,,101,A,,,
+26,4,25,N,Level 8-after 95 days,"125(Payment Due Date + 95 days)",101,A,,95,2
+48,7,,Y,IS In Debit,,101,A,,,
+49,7,48,N,Whitelist,,101,A,,,
+51,8,50,N,Re-purchase Teacher Add-on(s),,101,A,,,
+55,6,41,Y,Is Debit -1BN,,101,A,,,
+74,9,71,Y,non-action-1,,101,A,,25,
+75,9,81,Y,terminate-notify,,101,A,,,
+76,9,75,Y,terminate,,101,A,,30,
+77,9,76,Y,non-action-2,,101,A,,35,
+89,2,43,N,Subscriber Teacher Addon for payment,,101,A,,,
+14,4,53,Y,Level 0 -before 5 days,"25(5 days before Payment Due Date)",101,A,,,
+35,5,32,N,Level 3 -EP - after 30 days,"60(Payment Due Date + 30 days)",101,A,,30,5
+50,8,,Y,IS 1BN Debit,,101,A,,,
+52,8,51,Y,Subscriber Teacher Addon,,101,A,,,
+81,9,74,Y,non-action--2,,101,A,,,
+82,4,15,Y,Level1.1 after 5 days-manual action tagged,,101,A,,5,
+85,12,,Y,Notification,,101,A,,,
+86,4,19,Y,Level 4.1-after 31 days-manual action tagged,,101,A,,31,
+87,4,27,Y,level 9.1-after 125 days-Manual Action(Tagged),,101,A,,125,
+88,4,28,Y,Manual Action(Tagged),,101,A,,160,
+18,4,17,N,Level 3 - after 20 days,"50(Payment Due Date + 20 days)",101,A,,20,2
+41,6,,Y,"1BN",,101,A,,,
+43,2,6,N,TWO Reactivation,,101,A,,,
+83,11,,Y,auto-dialer grade,,101,A,,,
+13,4,,Y,MASS MARKET V2,MASS MARKET V2,101,A,,,
+15,4,14,N,Level 1 - after 1 day- Barred,Next BC(Payment Due Date + 1 day),101,A,,1,4
+17,4,82,N,Level 2 - after 10 days,"40(Payment Due Date + 10 days)",101,A,,10,
+19,4,15,N,Level 4 - after 30days- suspension&IMEI Block,"60(Payment Due Date + 30 days)",101,A,,30,5
+21,4,86,N,Level 5-after 40 days,"70(Payment Due Date + 40 days)",101,A,,40,
+23,4,21,N,Level 6-after 45 days-CTOS Blacklist,"75(Payment Due Date + 45 days)",101,A,,45,7
+25,4,23,Y,Level 7-after 60 days,"90(Payment Due Date + 60 days)",101,A,,60,2
+27,4,19,N,Level 9-after 105 days-Termination,"135(Payment Due Date + 105 days)",101,A,,105,6
+28,4,87,N,Post Termination Notification 1-140 days,"170(Payment Due Date + 140 days)",101,A,,140,
+30,5,,Y,ENTERPRISE,ENTERPRISE,101,A,,,
+31,5,54,Y,Level 0 -EP- before 25 days,"25(5 days before Payment Due Date)",101,A,,,
+32,5,31,N,Level 1 -EP - after 1 day,Next BC(Payment Due Date + 1 day),101,A,,1,4
+34,5,32,Y,Level 2 -EP - after 20days,"50(Payment Due Date + 20 days)",101,A,,20,2
+37,5,35,Y,Level 4 -EP - after 80 days,"110(Payment Due Date + 80 days)",101,A,,80,2
+40,5,35,N,Level 5 -EP - after 105 days,"135(Payment Due Date + 105 days)",101,A,,105,6
+42,6,55,Y,Level 1 -1BN,Next BC(Payment Due Date + 1 day),101,A,,,
+45,2,89,N,IMEI UnBlocking -N,,101,A,,,
+53,4,13,Y,Is Debit,,101,A,,,
+54,5,30,Y,Is Debit -EP,,101,A,,,
+67,9,,Y,test-action,,101,A,,,
+68,9,67,Y,barred-notify,,101,A,,5,
+69,9,68,Y,barred,,101,A,,10,
+70,9,69,Y,suspension-notify,,101,A,,15,
+71,9,70,Y,suspension,,101,A,,20,
+78,10,,Y,is debit,,101,A,,,
+84,11,83,Y,auto-dialer,,101,A,,,
+104,14,,Y,HYBRID,HYBRID,101,A,,,
+105,14,104,Y,Is Debit - HYBRID,,101,A,,,
+106,14,105,Y,Level 0 - HYBRID - after 31 days,,101,A,,,
+109,14,105,N,Exit And OWB Reactivation - HYBRID,,101,A,,,
+110,14,109,Y,Exit And TWO Reactivation - HYBRID,,101,A,,,
+111,14,110,Y,Exit IMEI UnBlocking - HYBRID,,101,A,,,
+113,14,106,N,Level 1 - HYBRID - after 53 days,,101,A,,,
+114,14,113,N,Level 2 - HYBRID - after 60 days,,101,A,,,
+91,5,54,N,Exit And OWB Reactivation-EP,,101,A,,,
+94,5,91,N,Exit And TWO Reactivation-EP,,101,A,,,
+96,13,,Y,ENTERPRISE-TR,ENTERPRISE,101,A,,,
+97,13,96,Y,Is Debit -TR,,101,A,,,
+98,13,97,Y,Level 0 -TR- before 7 Days,"7 days before Payment Due Date",101,A,,,
+102,13,97,N,Exit-TR,,101,A,,,
+90,4,53,N,Exit And OWB Reactivation,,101,A,,,
+92,4,90,N,Exit And TWO Reactivation,,101,A,,,
+100,13,99,N,Level 3 -TR- after 10 days,Payment Due Date + 10 days,101,A,,10,5
+103,13,98,N,Level 1 -TR- before 3 Days,send Sms,101,A,,,
+93,4,92,N,Exit IMEI UnBlocking,,101,A,,,
+95,5,94,N,Exit IMEI UnBlocking-EP,,101,A,,,
+99,13,103,N,Level 2 -TR- after 3 day,Next BC(Payment Due Date + 3day),101,A,,,
+101,13,100,N,Level 4 -EP - after 20 days,Payment Due Date + 20 days,101,A,,20,6
+115,4,18,N,Level 3.1 test -after 25 days,,101,A,,,

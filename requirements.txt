@@ -1,0 +1,14 @@
+# Dunning Simulation Tool - runtime dependencies
+#
+# python-oracledb is the official successor of cx_Oracle:
+#   * pure-wheel install, works in "thin mode" with NO Oracle Client
+#   * ships wheels for modern Python versions (cx_Oracle stops at 3.10)
+# If you must use cx_Oracle instead (e.g. thick-mode features), install the
+# Oracle Instant Client and add `cx_Oracle>=8.3` - the app supports both.
+oracledb>=1.0
+
+paramiko>=2.11
+requests>=2.28
+
+# Build tooling (only needed to produce the .exe)
+pyinstaller>=6.0

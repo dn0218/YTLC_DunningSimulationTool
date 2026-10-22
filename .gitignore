@@ -1,0 +1,21 @@
+# ---- secrets / local runtime config ----
+config.json
+dist/
+
+# ---- local backups (large zips) ----
+_backups/
+
+# ---- cptr workspace metadata / task logs ----
+.cptr/
+
+# ---- Office lock files ----
+~$*
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+build/
+
+# ---- PyInstaller output ----
+*.manifest

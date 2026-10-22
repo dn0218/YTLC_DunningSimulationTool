@@ -1,0 +1,32 @@
+{
+    "db": {
+        "host": "YOUR_DB_HOST",
+        "port": 11521,
+        "service_name": "cc",
+        "user": "cc",
+        "password": "CHANGE_ME"
+    },
+    "ssh": {
+        "host": "YOUR_SSH_HOST",
+        "port": 22,
+        "username": "CHANGE_ME",
+        "password": "CHANGE_ME",
+        "connect_timeout": 15,
+        "command_timeout": 60,
+        "retries": 3
+    },
+    "api": {
+        "base_url": "http://YOUR_API_HOST:7000",
+        "timeout": 30,
+        "retries": 3
+    },
+    "general": {
+        "poll_interval": 3,
+        "max_wait": 60,
+        "b_state_retries": 3,
+        "b_state_interval": 10,
+        "post_trigger_wait": 10,
+        "restore_wait": 5,
+        "settle_wait": 4
+    }
+}

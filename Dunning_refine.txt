@@ -1,0 +1,43 @@
+优化工具的GUI技术栈，借鉴"C:\Users\User\Desktop\Enabling\Sett_IDD_Script_SQL\preprod tools"的技术栈。优化GUI完成后，增加新的TAB:
+TAB1: IMEI Blacklist / IMEI Whitelist
+需求: 纯粹的查表功能，但是在同一个tab要能查两个表，可通过button切换。
+Blacklist功能细节: 
+默认查询(不带任何参数的)sql: select st.SPECIAL_GROUP_TYPE_NAME, ssg.* from cc.SUBS_SPECIAL_GROUP ssg JOIN cc.SPECIAL_GROUP_TYPE st ON ssg.SPECIAL_GROUP_TYPE_ID=st.SPECIAL_GROUP_TYPE_ID ORDER BY CREATED_DATE desc FETCH first 50 rows only;
+
+带参数查询SQL: select st.SPECIAL_GROUP_TYPE_NAME, ssg.* from cc.SUBS_SPECIAL_GROUP ssg JOIN cc.SPECIAL_GROUP_TYPE st ON ssg.SPECIAL_GROUP_TYPE_ID=st.SPECIAL_GROUP_TYPE_ID  where ssg.IMEI=‘<用户IMEI>’ OR ssg.IMEI=‘<用户IMEI-1character>’   ORDER BY CREATED_DATE desc FETCH first 20 rows only;
+
+#带参数查询的功能需要先校验位数，15位数则需要去掉一位尾数，把15和14位的两个IMEI代入查询，且两者都须返回结果。用户IMEI若本来就是14位数则不需要过滤。用户IMEI需要单引号以string类查询。
+#Whitelist功能完全复用Blacklist的全部细节，只把cc.SUBS_SPECIAL_GROUP 表换成 cc.SUBS_SPECIAL_GROUP_HIS
+
+TAB2:
+CTOS Blacklist / IMEI Whitelist
+需求: 纯粹的查表功能，但是在同一个tab要能查两个表，可通过button切换。功能细节和TAB1一致，只有表和用户输入参数的差异。
+默认查询(不带任何参数的)sql: SELECT asg.* from cc.ACCT_SPECIAL_GROUP asg ORDER BY CREATED_DATE desc FETCH first 50 rows only;
+
+# 带参数查询SQL: SELECT asg.* from cc.ACCT_SPECIAL_GROUP asg WHERE ACCT_NBR=<用户ACCT_NBR> ORDER BY CREATED_DATE desc FETCH first 20 rows only;
+
+# Whitelist功能完全复用Blacklist的全部细节，只把cc.ACCT_SPECIAL_GROUP 表换成 cc.ACCT_SPECIAL_GROUP_HIS
+
+TAB3: SKG Blacklist
+需求: 1，查单个表功能。 2，提供一个button和text input,预计在api_manager增加新的function。
+默认查询(不带任何参数的)sql: select skg.* from cc.special_group_sync skg ORDER BY created_date desc FETCH first 50 rows only;
+
+# 带参数查询SQL:select skg.* from cc.special_group_sync skg WHERE EXT_ATTR LIKE ('%<用户IMEI>%') ORDER BY created_date desc FETCH first 20 rows only;
+# 带参数查询的功能需要先校验位数，15位数则需要去掉一位尾数，把15和14位的两个IMEI代入查询.
+
+API功能:
+触发的curl是: curl -sS -X POST "http://10.26.128.34/jobservermgr/api/triggerJob?jobName=SKGBlacklistSyncJob&jobGroup=_jobserver_&params=QRY_DATE=<yyyy-mm-dd>|REPROCESS=Y|SP_ID=101"
+# yyyy-mm-dd 默认是sysdate，提供textbox给用户输入。按钮触发，触发前弹窗确认。
+
+
+TAB4: 
+Dunning Instance
+需求: 查表功能，以表列数据为源继续查询。
+
+查询 sql: select a.ACCT_NBR,d.* from cc.DEBIT_ACCT_OVERDUE_INST d JOIN cc.ACCT a ON d.acct_id=a.acct_id WHERE a.ACCT_NBR ='<用户ACCT_NBR>' ORDER BY CREATE_DATE desc ;
+以表列数据为源: select dr.rule_name,dra.* from debit_acct_overdue_rela_action dra JOIN cc.debit_rule dr ON dr.DEBIT_RULE_ID = dra.DEBIT_RULE_ID  where dra.inst_id=<d.inst_id>; 
+
+# 设计: 用户选择cc.DEBIT_ACCT_OVERDUE_INST d的某行,取其inst_id作为键值，以button触发查询。再添加一个返回的button。
+
+
+

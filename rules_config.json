@@ -1,0 +1,96 @@
+{
+    "MASSIVE": {
+        "ATTR_VALID_VALUES": [
+            "FIZ_CONSUMER", 
+            "HOME_USERS", 
+            "NON_VIP_CUSTOMER", 
+            "TESTLINE", 
+            "TESTUSER",
+            "NON_VIP_HYBRID"
+        ],
+        "DEFAULT_ATTR_VALUE": "NON_VIP_CUSTOMER",
+        "LEVEL_OFFSETS": {
+            "0": [0, 5],
+            "1": [-9, -1],
+            "2": [-19, -10],
+            "3": [-29, -20],
+            "4": [-39, -30],
+            "5": [-44, -40],
+            "6": [-59, -45],
+            "7": [-94, -60],
+            "8": [-104, -95],
+            "9": [-125, -105]
+        },
+        "LEVEL_RULES": {
+            "0": 14,
+            "1": 15,
+            "2": 17,
+            "3": 18,
+            "4": 19,
+            "5": 21,
+            "6": 23,
+            "7": 25,
+            "8": 26,
+            "9": 27
+        },
+        "LEVEL_DISPLAY_EN": {
+            "0": "Level 0 - before 5 days",
+            "1": "Level 1 - after 1 day - Barred",
+            "2": "Level 2 - after 10 days Notification",
+            "3": "Level 3 - after 20 days Notification",
+            "4": "Level 4 - after 30 days - suspension&IMEI Block",
+            "5": "Level 5 - after 40 days Notification",
+            "6": "Level 6 - after 45 days - CTOS Blacklist",
+            "7": "Level 7 - after 60 days Notification",
+            "8": "Level 8 - after 95 days Notification",
+            "9": "Level 9 - after 105 days - Termination"
+        }
+    },
+    "ENT": {
+        "ATTR_VALID_VALUES": ["NON_VIP_ENT", "TESTLINE", "SMI_SME"],
+        "DEFAULT_ATTR_VALUE": "NON_VIP_ENT",
+        "LEVEL_OFFSETS": {
+            "0": [0, 25],
+            "1": [-19, -1],
+            "2": [-29, -20],
+            "3": [-79, -30],
+            "4": [-104, -80],
+            "5": [-125, -105]
+        },
+        "LEVEL_RULES": {
+            "0": 31,
+            "1": 32,
+            "2": 34,
+            "3": 35,
+            "4": 37,
+            "5": 40
+        },
+        "LEVEL_DISPLAY_EN": {
+            "0": "Level 0 - before 25 days",
+            "1": "Level 1 - after 1 day - Barring",
+            "2": "Level 2 - after 20 days - Pre-suspend Notification",
+            "3": "Level 3 - after 30 days Suspension",
+            "4": "Level 4 - after 80 days Notification",
+            "5": "Level 5 - after 105 days - Termination"
+        }
+    },
+    "MASSIVE_HYBRID": {
+        "ATTR_VALID_VALUES": ["NON_VIP_HYBRID", "TESTLINE", "TESTUSER"],
+        "DEFAULT_ATTR_VALUE": "NON_VIP_HYBRID",
+        "LEVEL_OFFSETS": {
+            "0": [-52, -31],
+            "1": [-59, -53],
+            "2": [-125, -60]
+        },
+        "LEVEL_RULES": {
+            "0": 106,
+            "1": 113,
+            "2": 114
+        },
+        "LEVEL_DISPLAY_EN": {
+            "0": "Level 0 - after 31 days - Notification",
+            "1": "Level 1 - after 53 days - Final Notification",
+            "2": "Level 2 - after 60 days - Termination "
+        }
+    }
+}
